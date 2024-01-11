@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "${BACKEND_PORT}:8080"
+    environment:
+      - SOME_BACKEND_ENV_VAR=value
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "${FRONTEND_PORT}:9000"
+    environment:
+      - SOME_FRONTEND_ENV_VAR=value
