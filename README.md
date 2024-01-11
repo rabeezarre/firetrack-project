@@ -125,7 +125,3 @@ For more details, please refer to the respective repositories on GitHub:
 - [Frontend Repository](https://github.com/rabeezarre/firetrack-frontend)
 - [Mobile Repository](https://github.com/rabeezarre/firetrack-mobile)
 - [Embedded Programming Repository](https://github.com/rabeezarre/firetrack-embed)
-# sds
-# sds
-# sds
-# firetrack-project
