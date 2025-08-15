@@ -4,7 +4,6 @@
 - [About](#about)
     - [Features](#features)
     - [Sub-Systems](#sub-systems)
-- [Project Status](#project-status)
 - [Deployment](#deployment)
 - [Technology Stack](#technology-stack)
 - [Installation and Setup](#installation-and-setup)
@@ -14,6 +13,7 @@
 - [License](#license)
 - [Authors and Acknowledgment](#authors-and-acknowledgment)
 - [Testing the Website](#testing-the-website)
+- [Advancement: ML Module](#advancement-ml-module)
 
 ## About
 FireTrack is an integrated wildfire management system developed by rabeezarre, designed for monitoring, early detection, and efficient response to wildfires. It includes frontend, backend, mobile, and embedded components.
@@ -28,9 +28,6 @@ FireTrack is an integrated wildfire management system developed by rabeezarre, d
 - **Mobile**: Real-time tracking service for inspections.
 - **Backend**: Centralized database using Spring Boot, Java 17, and Gradle.
 - **Embedded Programming**: Utilizes LoRaWAN for data sharing.
-
-## Project Status
-In Progress
 
 ## Deployment
 Deployed on CleverCloud: [firetrack.cleverapps.io](https://firetrack.cleverapps.io/)
@@ -125,3 +122,15 @@ For more details, please refer to the respective repositories on GitHub:
 - [Frontend Repository](https://github.com/rabeezarre/firetrack-frontend)
 - [Mobile Repository](https://github.com/rabeezarre/firetrack-mobile)
 - [Embedded Programming Repository](https://github.com/rabeezarre/firetrack-embed)
+
+## Advancement: ML Module
+
+To elevate wildfire risk detection, FireTrack now includes an **ML module**—housed separately in the [firetrack-ml](https://github.com/rabeezarre/firetrack-ml) repository. This module analyzes **temperature**, **humidity**, and **altitude** using a **K-means clustering model** to classify risk into **Low**, **Medium**, or **High** categories. Results are exposed via a lightweight **FastAPI service** for real-time integration with the main system.
+
+Key benefits:
+- Delivers data-driven, environmental risk assessments.
+- Seamlessly plugs into backend workflows using a REST API.
+- Offers modularity and room for extension (e.g., additional weather features or clustering methods).
+
+See [firetrack-ml](https://github.com/rabeezarre/firetrack-ml) for full documentation and setup instructions.
+
